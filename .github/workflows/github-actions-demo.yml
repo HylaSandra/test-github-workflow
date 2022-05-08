@@ -15,6 +15,11 @@ jobs:
   job2:
     name: job2
     runs-on: ubuntu-latest
+    steps:
+      - run: pyton -m pip install
+             pip install pylint
+      - run: |
+          find . -name 'app.py' -exec pylint {} \;
         
  
       
