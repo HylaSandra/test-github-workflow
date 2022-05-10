@@ -8,14 +8,15 @@ on:
   workflow_dispatch:
 jobs:
   job1:
-    name: job1
     runs-on: ubuntu-latest
     steps: 
-        - run: echo "Version of Pyton is ${{ python --version }}.
+      - name: job1
+      - run: echo "Version of Pyton is ${{ python --version }}.
   job2:
-    name: job2
     runs-on: ubuntu-latest
     steps:
+        - name: job2
+          uses: actions/checkout@v3
         - run: pyton -m pip install --upgrade pip
              pip install pylint
         - run: |
