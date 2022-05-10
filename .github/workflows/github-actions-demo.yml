@@ -18,10 +18,11 @@ jobs:
     steps:
         - name: job2
           uses: actions/checkout@v3
-        - run: pyton -m pip install --upgrade pip
-             pip install pylint
         - run: |
-            find . -name 'app.py' -exec pylint {} \;
+            pyton -m pip install --upgrade pip
+            pip install pylint
+        - run: |
+            find . -name '*.py' -exec pylint {} \;
         
  
       
