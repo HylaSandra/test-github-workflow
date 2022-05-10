@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: job1
-      - run: echo "Version of Pyton is ${{ python --version }}.
+      - run: echo "Version of Pyton" is python --version "."
   job2:
     runs-on: ubuntu-latest
     steps:
