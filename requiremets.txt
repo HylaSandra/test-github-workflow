@@ -1,4 +1,2 @@
 #wymagane
-python
 flask
-ubuntu
