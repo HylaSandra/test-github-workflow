@@ -12,7 +12,7 @@ jobs:
     steps: 
       - name: job1
         uses: actions/checkout@v3
-      - run: echo "Version of Pyton" is python --version "."
+      - run: echo "Version of Python" is python --version "."
   job2:
     runs-on: ubuntu-latest
     steps:
